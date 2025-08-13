@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -429,7 +430,6 @@
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À Propos</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Réalisations</a></li>
                 <li><a href="#videos">Vidéos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -453,11 +453,11 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <div class="image-placeholder" style="width: 300px; height: 300px; border-radius: 50%; margin: 0 auto;">
+                    <div style="width: 300px; height: 300px; border-radius: 50%; margin: 0 auto; background: linear-gradient(135deg, var(--primary-green), var(--gold)); display: flex; align-items: center; justify-content: center; color: white; border: 5px solid var(--gold); box-shadow: var(--shadow);">
                         <div style="text-align: center;">
                             <i class="fas fa-user" style="font-size: 4rem; margin-bottom: 1rem; display: block;"></i>
-                            <strong>Deborah OULAI</strong><br>
-                            <small>CEO Echo Diaspora Events</small>
+                            <strong style="font-size: 1.2rem;">Deborah OULAI</strong><br>
+                            <small style="font-size: 0.9rem;">CEO Echo Diaspora Events</small>
                         </div>
                     </div>
                 </div>
@@ -505,55 +505,45 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Nos Réalisations</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="image-placeholder">
-                        <div style="text-align: center;">
-                            <i class="fas fa-video" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
-                            <strong>Interview Audiovisuelle</strong><br>
-                            <small>Production en cours</small>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="badge">🎬 AUDIOVISUEL</div>
-                        <h3>Productions Audiovisuelles</h3>
-                        <p>Nos équipes en action lors de tournages d'interviews. Nous capturons les témoignages authentiques de la diaspora, créant des ponts entre les communautés et mettant en lumière des parcours inspirants.</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <div class="image-placeholder">
-                        <div style="text-align: center;">
-                            <i class="fas fa-star" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
-                            <strong>Festival de Cannes 2024</strong><br>
-                            <small>Collection Pêle-Mêle by Sorobis</small>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="badge">🌟 ÉVÉNEMENTS PRESTIGIEUX</div>
-                        <h3>Festival de Cannes 2024</h3>
-                        <p>Collection Pêle-Mêle by Sorobis au Festival de Cannes. Notre présence aux grands événements mondiaux illustre notre expertise dans l'organisation et la couverture d'événements d'envergure internationale.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; background: var(--light-green); padding: 2rem; border-radius: 15px;">
-                <h3 style="color: var(--dark-gold); margin-bottom: 1rem;">🎯 Notre Expertise Reconnue</h3>
-                <p style="font-size: 1.1rem; color: var(--text-dark);">
-                    <strong>Des plateaux de tournage aux tapis rouges internationaux</strong>, Echo Diaspora Events maîtrise toute la chaîne de l'audiovisuel et de l'événementiel. Nos réalisations témoignent de notre engagement à excellence et de notre capacité à opérer aux plus hauts niveaux.
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- Videos Section -->
     <section id="videos" class="videos">
         <div class="container">
             <h2>Nos Productions</h2>
+            
+            <!-- Galerie des 2 photos -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s;">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--primary-green), var(--gold)); display: flex; align-items: center; justify-content: center; color: white;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-video" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                            <strong style="font-size: 1.3rem;">Interview Audiovisuelle</strong><br>
+                            <small style="font-size: 1rem;">Production en cours</small>
+                        </div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <div style="background: var(--gold); color: var(--white); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 1rem;">🎬 AUDIOVISUEL</div>
+                        <h3 style="color: var(--dark-gold); font-size: 1.3rem; margin-bottom: 1rem;">Productions Audiovisuelles</h3>
+                        <p style="color: var(--text-dark); line-height: 1.6;">Nos équipes en action lors de tournages d'interviews. Nous capturons les témoignages authentiques de la diaspora.</p>
+                    </div>
+                </div>
+                
+                <div style="background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s;">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, var(--gold), var(--primary-green)); display: flex; align-items: center; justify-content: center; color: white;">
+                        <div style="text-align: center;">
+                            <i class="fas fa-star" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                            <strong style="font-size: 1.3rem;">Festival de Cannes 2024</strong><br>
+                            <small style="font-size: 1rem;">Collection Pêle-Mêle by Sorobis</small>
+                        </div>
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <div style="background: var(--gold); color: var(--white); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.9rem; display: inline-block; margin-bottom: 1rem;">🌟 ÉVÉNEMENTIEL</div>
+                        <h3 style="color: var(--dark-gold); font-size: 1.3rem; margin-bottom: 1rem;">Événements Prestigieux</h3>
+                        <p style="color: var(--text-dark); line-height: 1.6;">Notre présence aux grands événements mondiaux illustre notre expertise internationale.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section vidéos futures -->
             <div class="video-placeholder">
                 <i class="fas fa-video"></i>
                 <p>Interviews et Témoignages</p>
