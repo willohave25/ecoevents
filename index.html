@@ -181,8 +181,7 @@
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(20px);
+            background: var(--gradient-2);
             border: 8px solid var(--white);
             box-shadow: var(--shadow);
             display: flex;
@@ -316,21 +315,22 @@
             width: 400px;
             height: 400px;
             border-radius: 30px;
-            background: var(--gradient-2);
+            background: var(--gradient-1);
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
+            margin: 0 auto;
         }
 
         .about-image::before {
             content: '';
             position: absolute;
-            inset: 10px;
+            inset: 15px;
             border-radius: 20px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.15);
             backdrop-filter: blur(10px);
         }
 
@@ -503,12 +503,13 @@
 
         .portfolio-image {
             height: 250px;
-            background: var(--gradient-2);
+            background: var(--gradient-1);
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
             position: relative;
+            font-weight: 600;
         }
 
         .portfolio-content {
@@ -809,7 +810,7 @@
                 <div class="about-visual">
                     <div class="about-image">
                         <div class="image-content">
-                            <i class="fas fa-user-crown"></i>
+                            <i class="fas fa-crown"></i>
                             <h3>Deborah OULAI</h3>
                             <p>CEO Echo Diaspora Events</p>
                         </div>
